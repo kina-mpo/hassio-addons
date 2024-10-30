@@ -1,0 +1,45 @@
+{
+  "name": "Hostapd",
+  "version": "0.1",
+  "description": "WiFi Access point",
+  "arch": ["armv7"],
+  "startup": "system",
+  "boot": "auto",
+  "host_network": true,
+  "apparmor": false,
+  "host_dbus": true,
+  "full_access": true,
+  "privileged": [
+    "NET_ADMIN",
+    "SYS_ADMIN",
+    "SYS_RAWIO",
+    "SYS_TIME",
+    "SYS_NICE"
+  ],
+  "devices": [
+    "/dev/mem"
+  ],
+  "map": [
+    "config:rw",
+    "ssl:rw"
+  ],
+  "init": false,
+  "options": {
+    "ssid": "Test",
+    "wpa_passphrase": "1973",
+    "channel": "6",
+    "hide_ssid": false
+  },
+  "schema": {
+    "ssid": "str",
+    "wpa_passphrase": "str",
+    "channel": "int",
+    "address": "str",
+    "netmask": "str",
+    "broadcast": "str",
+    "interface": "str",
+    "internet_interface": "str",
+    "allow_internet": "bool",
+    "hide_ssid": "bool"
+  }
+} 
