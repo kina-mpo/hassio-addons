@@ -1,0 +1,29 @@
+---
+name: "Hostapd"
+version: "0.1"
+slug: "hostapd"
+description: Hostapd
+url: https://github.com/kina-mpo/hassio-addons/hostapd
+init: true
+arch:
+  - aarch64
+  - amd64
+  - armv7
+map:
+  - addons:rw
+  - all_addon_configs:rw
+  - backup:rw
+  - homeassistant_config:rw
+  - media:rw
+  - share:rw
+  - ssl:rw
+options:
+  hostapd:
+    ssid: "ChangeMe"
+    password: "ChangeMeToo"
+    channel: "6"
+schema:
+  hostapd:
+    ssid: str
+    pass: str
+    channel: int(1,13)
