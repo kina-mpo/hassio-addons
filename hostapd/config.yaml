@@ -2,18 +2,18 @@ name: Hostapd
 version: "0.1"
 slug: hostapd
 description: >-
- "Add-on for setting up a Wi-Fi access point using hostapd"
+  Wi-Fi access point
 arch:
-  - armhf
   - armv7
-  - aarch64
-boot: "auto"
-hassio_api: true
-hassio_role: "default"
 options:
-  ssid: "ChangeMe"
-  password: "ChangeMeToo"
+  ssid2: "ChangeMe"
+  password2: "ChangeMeToo"
+  channel2: "5"
+  width2: "20"
+  ssid5: "ChangeMe"
+  password5: "ChangeMeToo"
+  channel5: "161"
+  width5: "80"
   interface: "wlan0"
   driver: "nl80211"
-  channel: "6"
-  hw_mode: "g"
+  hw_mode: "vht"
