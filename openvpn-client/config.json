@@ -9,19 +9,19 @@
   "auto_update": true,
   "options": {
     "openvpn_config": "str",
-    "ca_crt": "str",
-    "client_crt": "str",
-    "client_key": "str",
-    "username": "str",
-    "password": "str"
+    "ca_crt": "str?",
+    "client_crt": "str?",
+    "client_key": "str?",
+    "username": "str?",
+    "password": "str?"
   },
   "schema": {
-    "openvpn_config": "str",
-    "ca_crt": "str",
-    "client_crt": "str",
-    "client_key": "str",
-    "username": "str",
-    "password": "str"
+    "openvpn_config": "str?",
+    "ca_crt": "str?",
+    "client_crt": "str?",
+    "client_key": "str?",
+    "username": "str?",
+    "password": "str?"
   },
   "ports": {},
   "map": ["config:rw"],
