@@ -3,7 +3,7 @@
   "version": "1.0",
   "slug": "hello_world",
   "description": "My first add-on: Hello World!",
-  "arch": ["amd64", "armv7", "aarch64"],
+  "arch": ["aarch64"],
   "startup": "application",
   "boot": "auto",
   "options": {},

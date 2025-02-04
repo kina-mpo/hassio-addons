@@ -1,0 +1,25 @@
+{
+  "name": "OpenVPN Client",
+  "version": "1.0",
+  "slug": "openvpn_client",
+  "description": "OpenVPN Client",
+  "arch": ["aarch64"],
+  "startup": "services",
+  "boot": "auto",
+  "auto_update": true,
+  "options": {
+    "openvpn_config": "str",
+    "ca_crt": "str",
+    "client_crt": "str",
+    "client_key": "str"
+  },
+  "schema": {
+    "openvpn_config": "str",
+    "ca_crt": "str",
+    "client_crt": "str",
+    "client_key": "str"
+  },
+  "ports": {},
+  "map": ["config:rw"],
+  "host_network": true
+}
